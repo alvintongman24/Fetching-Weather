@@ -1,0 +1,105 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.video-background {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  object-fit: cover;
+  opacity: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  padding-top: 2%;
+  font-size: 2em;
+  word-spacing: 5px;
+  border: 4px solid rgb(245, 214, 193);
+  width: 30%;
+  height: 70%;
+  margin-left: 35%;
+  margin-top: 5%;
+  backdrop-filter: 20px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content h1 {
+  text-align: center;
+}
+
+.content p {
+  word-spacing: 10px;
+  letter-spacing: 3px;
+  font-size: 20px;
+  color: rgb(202, 119, 64);
+  text-align: left;
+}
+
+.content .TDL {
+  padding-left: 30px;
+}
+
+span {
+  height: 150px;
+  width: 120px;
+  border: 1px solid rgb(240, 166, 166);
+}
+
+.but {
+  text-align: center;
+  align-items: center;
+}
+
+#PressL {
+  border: 5px solid ghostwhite;
+  width: 150px;
+  height: 50px;
+  background-color: antiquewhite;
+  border-radius: 20%;
+  margin-top: 10px;
+}
+
+#PressL:hover {
+  background-color: gray;
+  color: white;
+}
+
+/* media quary */
+/* Consider using media queries to make your app responsive to different screen sizes. */
+@media (max-width: 779px) {
+  .content {
+    width: 40%;
+    height: 50%;
+    font-size: 10px;
+  }
+
+  .content p {
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    color: rgb(228, 158, 112);
+  }
+
+  span {
+    height: 50px;
+    width: 60px;
+    border: 1px solid rgb(240, 166, 166);
+  }
+
+  #PressL {
+    border: 5px solid ghostwhite;
+    width: 70px;
+    height: 40px;
+    background-color: antiquewhite;
+    border-radius: 20%;
+  }
+}
